@@ -148,6 +148,8 @@ for (const k of Object.keys(IDIOMAS)) {
   write(`${IDIOMAS[k].path}/index.html`, paginaLinks(k));
   write(`${IDIOMAS[k].prod}/index.html`, paginaProdutos(k));
 }
-write("CNAME", "links.ineliagarcia.com\n");
+// Páginas de upsell do Pré-Pilates (export estático das da GreatPages, assets e CSS/JS próprios, sem o GTM antigo)
+if (fs.existsSync("src/upsell")) for (const d of fs.readdirSync("src/upsell")) fs.cpSync(path.join("src/upsell", d), path.join(OUT, d), { recursive: true });
+write("CNAME", "links.ineliagarcia.com");
 write(".nojekyll", "");
 console.log("gerado em", OUT);
