@@ -39,7 +39,7 @@ export const IDIOMAS = {
       cards: [
         { id: "plataforma", kicker: "Plataforma Online", titulo: "Autêntico Pilates de Educação Continuada", img: "plataforma.jpg", destaque: true,
           txt: ["Aprenda a evoluir o corpo de QUALQUER aluno do básico ao avançado com segurança.", "Independente da sua saúde, do seu condicionamento físico ou da sua anatomia, através dos princípios do Autêntico Pilates."],
-          href: "https://pay.hotmart.com/A73769458C?off=ri47wli4&checkoutMode=10" },
+          href: "https://ineliagarcia.com/comprar/br?o=linktree-br" },
         { id: "pre-pilates-idosos", kicker: "Plataforma Online", titulo: "Pré Pilates para Idosos", img: "idosos.jpg",
           txt: ["Unindo os princípios do Autêntico Pilates a exercícios adaptados, essa abordagem promove força, flexibilidade, equilíbrio e bem-estar para idosos. Minimiza as limitações da idade e melhora a qualidade de vida no dia a dia."],
           href: "https://pay.hotmart.com/R76499789R" },
@@ -88,7 +88,7 @@ export const IDIOMAS = {
       cards: [
         { id: "plataforma", kicker: "Plataforma Online", titulo: "Auténtico Pilates de Educación Continua", img: "plataforma.jpg", destaque: true,
           txt: ["Aprende a hacer evolucionar el cuerpo de CUALQUIER alumno, del nivel básico al avanzado, con seguridad.", "Independientemente de su salud, su condición física o su anatomía, a través de los principios del Auténtico Pilates."],
-          href: "https://pay.hotmart.com/I96162102V?off=zispcw20&checkoutMode=10" },
+          href: "https://ineliagarcia.com/comprar/es?o=linktree-es" },
         { id: "pre-pilates-adultos-mayores", kicker: "Plataforma Online", titulo: "Pre Pilates para Adultos Mayores", img: "idosos.jpg",
           txt: ["Uniendo los principios del Auténtico Pilates con ejercicios adaptados, este enfoque promueve fuerza, flexibilidad, equilibrio y bienestar para adultos mayores. Minimiza las limitaciones propias de la edad y mejora la calidad de vida en el día a día."],
           href: "https://pay.hotmart.com/B99031927K" },
@@ -137,7 +137,7 @@ export const IDIOMAS = {
       cards: [
         { id: "plataforma", kicker: "Online Platform", titulo: "Authentic Pilates Continuing Education", img: "plataforma.jpg", destaque: true,
           txt: ["Learn how to evolve the body of ANY student, from beginner to advanced, safely.", "Regardless of their health, physical condition, or anatomy, through the principles of Authentic Pilates."],
-          href: "https://pay.hotmart.com/P96110338W?off=2ja8tpn7&checkoutMode=10" },
+          href: "https://ineliagarcia.com/comprar/en?o=linktree-en" },
         { id: "pre-pilates-seniors", kicker: "Online Platform", titulo: "Pre Pilates for Seniors", img: "idosos.jpg",
           txt: ["Combining the principles of Authentic Pilates with adapted exercises, this approach promotes strength, flexibility, balance, and well-being for older adults. It minimizes age-related limitations and improves everyday quality of life."],
           href: "https://pay.hotmart.com/W99036684N" },
