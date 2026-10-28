@@ -182,7 +182,7 @@ export const IDIOMAS = {
     cookies: "Usiamo i cookie per personalizzare i contenuti e migliorare la tua esperienza.",
     ok: "Ok, ho capito",
     botoes: [
-      { id: "plataforma", texto: "Studia e allenati con Inelia - 100% online.", href: "https://academyit.ineliagarcia.com/" },
+      { id: "plataforma", texto: "Studia e allenati con Inelia, 100% online.", href: "https://academyit.ineliagarcia.com/" },
       { id: "lavinia", texto: "Parla con Lavínia, dell'assistenza della Piattaforma", href: lavinia("Ciao! Sono sulla pagina del Programma Autentico Pilates Inelia Garcia e vorrei saperne di più. Mi chiamo ") },
     ],
   },
@@ -195,7 +195,7 @@ export const IDIOMAS = {
     cookies: "Nous utilisons des cookies pour personnaliser le contenu et améliorer votre expérience.",
     ok: "Ok, compris",
     botoes: [
-      { id: "plataforma", texto: "Étudiez et entraînez-vous avec Inelia - 100% en ligne.", href: "https://academyfr.ineliagarcia.com/" },
+      { id: "plataforma", texto: "Étudiez et entraînez-vous avec Inelia, 100% en ligne.", href: "https://academyfr.ineliagarcia.com/" },
       { id: "lavinia", texto: "Parlez à Lavínia, de l'assistance de la Plateforme", href: lavinia("Bonjour ! Je suis sur la page du Programme Authentique Pilates Inelia Garcia et j'aimerais en savoir plus. Je m'appelle ") },
     ],
   },
