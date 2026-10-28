@@ -178,7 +178,7 @@ export const IDIOMAS = {
     path: "link-it",
     titulo: "Inelia Garcia",
     tagline: "Teacher of the Teachers",
-    aviso: "Black November: una condizione speciale fino al 30 novembre",
+    aviso: "In novembre, il Black November porta una condizione speciale",
     cookies: "Usiamo i cookie per personalizzare i contenuti e migliorare la tua esperienza.",
     ok: "Ok, ho capito",
     botoes: [
@@ -191,7 +191,7 @@ export const IDIOMAS = {
     path: "link-fr",
     titulo: "Inelia Garcia",
     tagline: "Teacher of the Teachers",
-    aviso: "Black November : une condition spéciale jusqu'au 30 novembre",
+    aviso: "En novembre, le Black November apporte une condition spéciale",
     cookies: "Nous utilisons des cookies pour personnaliser le contenu et améliorer votre expérience.",
     ok: "Ok, compris",
     botoes: [
