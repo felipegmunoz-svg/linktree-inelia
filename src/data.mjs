@@ -133,7 +133,7 @@ export const IDIOMAS = {
     ok: "Ok, got it",
     botoes: [
       { id: "plataforma", texto: "Study and Train with Inelia - 100% online.", href: "@prod" },
-      { id: "lavinia", texto: "Talk to Lavínia, from Platform support", href: lavinia("Hi! I'm on the Authentic Pilates Program by Inelia Garcia page and would like to know more. My name is ") },
+      { id: "lavinia", texto: "Talk to Lavínia from the Platform support team", href: lavinia("Hi! I'm on the Authentic Pilates Program by Inelia Garcia page and would like to know more. My name is ") },
       { id: "formation-brazil", texto: "2027 In-Person Training in Brazil", href: "https://brasil.ineliagarcia.com/" },
       { id: "store", texto: "Online Store", href: wa("5511989129767", "Hello,\n\nI am interested in purchasing a product from the Pilates store. My name is...") },
       { id: "equipment", texto: "Purchase Equipment", href: wa("5511970778961", "Hello,\n\nI am interested in purchasing equipment from Joe Pilates. My name is...") },
