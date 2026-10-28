@@ -102,7 +102,7 @@ function topo(avatar) {
 }
 
 function paginaRaiz() {
-  const itens = [["br", "Português"], ["es", "Español"], ["en", "English"]]
+  const itens = [["br", "Português"], ["es", "Español"], ["en", "English"], ["it", "Italiano"], ["fr", "Français"]]
     .map(([k, txt]) => `<a class="pill vidro" data-lt="idioma-${k}" href="/${IDIOMAS[k].path}">${txt}${SETA}</a>`)
     .join("");
   return head("Inelia Garcia", "pt-BR", "raiz") + `<div class="fundo"><div class="topo">${topo("avatar-link.jpg")}<p class="sub">Teacher of the Teachers</p><div class="lista">${itens}</div></div></div>${rodape()}${COOKIE(IDIOMAS.br)}${JS}</body></html>`;
@@ -117,7 +117,7 @@ function paginaLinks(k) {
       return `<a class="pill" data-lt="${b.id}" href="${esc(alvo)}"${ext}>${esc(b.texto)}</a>`;
     })
     .join("");
-  return head(t.titulo, t.lang, `links-${k}`) + `<div class="fundo"><div class="topo">${topo("avatar-link.jpg")}<p class="sub">${esc(t.tagline)}</p><div class="lista">${itens}</div></div></div>${rodape()}${COOKIE(t)}${JS}</body></html>`;
+  return head(t.titulo, t.lang, `links-${k}`) + `<div class="fundo"><div class="topo">${topo("avatar-link.jpg")}<p class="sub">${esc(t.tagline)}</p>${t.aviso ? `<p class="sub">${esc(t.aviso)}</p>` : ""}<div class="lista">${itens}</div></div></div>${rodape()}${COOKIE(t)}${JS}</body></html>`;
 }
 
 function paginaProdutos(k) {
@@ -146,7 +146,7 @@ write("index.html", paginaRaiz());
 write("404.html", pagina404());
 for (const k of Object.keys(IDIOMAS)) {
   write(`${IDIOMAS[k].path}/index.html`, paginaLinks(k));
-  write(`${IDIOMAS[k].prod}/index.html`, paginaProdutos(k));
+  if (IDIOMAS[k].prod) write(`${IDIOMAS[k].prod}/index.html`, paginaProdutos(k));
 }
 // Páginas de upsell do Pré-Pilates (export estático das da GreatPages, assets e CSS/JS próprios, sem o GTM antigo)
 if (fs.existsSync("src/upsell")) for (const d of fs.readdirSync("src/upsell")) fs.cpSync(path.join("src/upsell", d), path.join(OUT, d), { recursive: true });

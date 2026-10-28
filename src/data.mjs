@@ -13,6 +13,11 @@ export const SITE = {
 
 const wa = (num, txt) => `https://wa.me/${num}?text=${encodeURIComponent(txt)}`;
 
+// Atendimento da Lavínia (+55 11 95504-0751, §82.2791). A mensagem pronta é a do botão da página de vendas do mercado, que o
+// código da Lavínia reconhece (experimentos/lavinia/codigo/chegada.py): ela abre a conversa na língua e com o produto do mercado.
+const LAVINIA = "5511955040751";
+const lavinia = (txt) => `https://wa.me/${LAVINIA}?text=${encodeURIComponent(txt)}`;
+
 export const IDIOMAS = {
   br: {
     lang: "pt-BR",
@@ -24,6 +29,7 @@ export const IDIOMAS = {
     ok: "Ok, entendi",
     botoes: [
       { id: "plataforma", texto: "Plataforma Autêntico Pilates", href: "@prod" },
+      { id: "lavinia", texto: "Fale com a Lavínia, do atendimento da Plataforma", href: lavinia("Oi! Estou na página do Programa Autêntico Pilates de Educação Continuada e quero saber mais. Meu nome é ") },
       { id: "formacao-brasil", texto: "Formação Brasil 2027", href: "https://brasil.ineliagarcia.com/" },
       { id: "formacao-portugal", texto: "Formação Portugal 2027", href: "https://pilatesportugal.pt/certificacao-26-27/" },
       { id: "formacion-chile", texto: "Formación Chile 2027", href: "https://wa.me/56985282402" },
@@ -77,6 +83,7 @@ export const IDIOMAS = {
     ok: "Ok, entendido",
     botoes: [
       { id: "plataforma", texto: "Estudia y Entrena con Inelia - 100% online.", href: "@prod" },
+      { id: "lavinia", texto: "Habla con Lavínia, de la atención de la Plataforma", href: lavinia("¡Hola! Estoy en la página del Programa Auténtico Pilates Inelia Garcia y quiero saber más. Mi nombre es ") },
       { id: "formacion-brasil", texto: "Formación Presencial - 2027 - Brasil", href: "https://brasil.ineliagarcia.com/" },
       { id: "tienda", texto: "Tienda Virtual", href: wa("5511989129767", "Hola,\n\nEstoy interesado/a en adquirir un producto de la tienda de Pilates. Mi nombre es...") },
       { id: "equipos", texto: "Comprar Equipos", href: wa("5511970778961", "Hola,\n\nEstoy interesado/a en adquirir un equipo de Joe Pilates. Mi nombre es...") },
@@ -126,6 +133,7 @@ export const IDIOMAS = {
     ok: "Ok, got it",
     botoes: [
       { id: "plataforma", texto: "Study and Train with Inelia - 100% online.", href: "@prod" },
+      { id: "lavinia", texto: "Talk to Lavínia, from Platform support", href: lavinia("Hi! I'm on the Authentic Pilates Program by Inelia Garcia page and would like to know more. My name is ") },
       { id: "formation-brazil", texto: "2027 In-Person Training in Brazil", href: "https://brasil.ineliagarcia.com/" },
       { id: "store", texto: "Online Store", href: wa("5511989129767", "Hello,\n\nI am interested in purchasing a product from the Pilates store. My name is...") },
       { id: "equipment", texto: "Purchase Equipment", href: wa("5511970778961", "Hello,\n\nI am interested in purchasing equipment from Joe Pilates. My name is...") },
@@ -164,5 +172,31 @@ export const IDIOMAS = {
           href: "https://pay.hotmart.com/U99117853A" },
       ],
     },
+  },
+  it: {
+    lang: "it",
+    path: "link-it",
+    titulo: "Inelia Garcia",
+    tagline: "Teacher of the Teachers",
+    aviso: "Black November: una condizione speciale fino al 30 novembre",
+    cookies: "Usiamo i cookie per personalizzare i contenuti e migliorare la tua esperienza.",
+    ok: "Ok, ho capito",
+    botoes: [
+      { id: "plataforma", texto: "Studia e allenati con Inelia - 100% online.", href: "https://academyit.ineliagarcia.com/" },
+      { id: "lavinia", texto: "Parla con Lavínia, dell'assistenza della Piattaforma", href: lavinia("Ciao! Sono sulla pagina del Programma Autentico Pilates Inelia Garcia e vorrei saperne di più. Mi chiamo ") },
+    ],
+  },
+  fr: {
+    lang: "fr",
+    path: "link-fr",
+    titulo: "Inelia Garcia",
+    tagline: "Teacher of the Teachers",
+    aviso: "Black November : une condition spéciale jusqu'au 30 novembre",
+    cookies: "Nous utilisons des cookies pour personnaliser le contenu et améliorer votre expérience.",
+    ok: "Ok, compris",
+    botoes: [
+      { id: "plataforma", texto: "Étudiez et entraînez-vous avec Inelia - 100% en ligne.", href: "https://academyfr.ineliagarcia.com/" },
+      { id: "lavinia", texto: "Parlez à Lavínia, de l'assistance de la Plateforme", href: lavinia("Bonjour ! Je suis sur la page du Programme Authentique Pilates Inelia Garcia et j'aimerais en savoir plus. Je m'appelle ") },
+    ],
   },
 };
