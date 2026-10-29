@@ -32,7 +32,7 @@ export const IDIOMAS = {
       { id: "lavinia", texto: "Fale com a Lavínia, do atendimento da Plataforma", href: lavinia("Oi! Estou na página do Programa Autêntico Pilates de Educação Continuada e quero saber mais. Meu nome é ") },
       { id: "formacao-brasil", texto: "Formação Brasil 2027", href: "https://brasil.ineliagarcia.com/" },
       { id: "formacao-portugal", texto: "Formação Portugal 2027", href: "https://pilatesportugal.pt/certificacao-26-27/" },
-      { id: "formacion-chile", texto: "Formación Chile 2027", href: "https://wa.me/56985282402" },
+      { id: "formacion-chile", texto: "Formação Chile 2027", href: "https://wa.me/56985282402" },
       { id: "loja", texto: "Loja Virtual", href: wa("5511989129767", "Olá,\n\nTenho interesse em adquirir um produto da loja do Pilates. Meu nome é...") },
       { id: "aparelhos", texto: "Comprar Aparelhos", href: wa("5511970778961", "\nOlá,\n\nTenho interesse em adquirir um equipamento da Joe Pilates. Meu nome é...") },
     ],
