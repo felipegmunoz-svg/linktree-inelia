@@ -95,7 +95,7 @@ export const IDIOMAS = {
       adquirir: "Adquirir",
       landing: "https://academyes.ineliagarcia.com",
       cards: [
-        { id: "plataforma", kicker: "Plataforma Online", titulo: "Auténtico Pilates de Educación Continua", img: "plataforma.jpg", destaque: true,
+        { id: "plataforma", kicker: "Plataforma Online", titulo: "Programa Auténtico Pilates Inelia Garcia", img: "plataforma.jpg", destaque: true,
           txt: ["Aprende a hacer evolucionar el cuerpo de CUALQUIER alumno, del nivel básico al avanzado, con seguridad.", "Independientemente de su salud, su condición física o su anatomía, a través de los principios del Auténtico Pilates."],
           href: "https://academyes.ineliagarcia.com" },
         { id: "pre-pilates-adultos-mayores", kicker: "Plataforma Online", titulo: "Pre Pilates para Adultos Mayores", img: "idosos.jpg",
