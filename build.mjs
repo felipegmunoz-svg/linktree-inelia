@@ -131,7 +131,7 @@ function paginaProdutos(k) {
       return `<section class="card"><p class="kicker">${esc(c.kicker)}</p><h2>${esc(c.titulo)}</h2><img class="foto" loading="lazy" src="/img/${c.img}" alt="${esc(c.titulo)}">${txt}<div class="acoes">${comprar}${saber}</div></section>`;
     })
     .join("");
-  return head("Produtos Digitais", t.lang, `produtos-${k}`) + `<main class="prod"><div class="avatar"><img src="/img/avatar-prod.jpg" alt="Inelia Garcia">${BADGE}</div><h1 class="nome">${esc(SITE.nome)}</h1><p class="sub">${SITE.handle}</p>${cards}</main><div class="fim"></div>${rodape()}${COOKIE(t)}${JS}</body></html>`;
+  return head(t.produtos.titulo_pag, t.lang, `produtos-${k}`) + `<main class="prod"><div class="avatar"><img src="/img/avatar-prod.jpg" alt="Inelia Garcia">${BADGE}</div><h1 class="nome">${esc(SITE.nome)}</h1><p class="sub">${SITE.handle}</p>${cards}</main><div class="fim"></div>${rodape()}${COOKIE(t)}${JS}</body></html>`;
 }
 
 function pagina404() {
